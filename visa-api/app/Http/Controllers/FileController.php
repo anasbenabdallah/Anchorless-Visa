@@ -21,7 +21,8 @@ class FileController extends Controller
         ]);
 
         $file = $request->file('file');
-        $path = $file->store('uploads', 'public');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $path = $file->storeAs('uploads', $fileName, 'public');
 
         $saved = File::create([
             'name' => $file->getClientOriginalName(),
