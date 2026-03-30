@@ -1,9 +1,9 @@
 ## Structure de projet
 
-/visa-project
-├── /visa-api(Laravel)
-├── /frontend (Remix)
-└── README.md
+visa-project/
+├── visa-api/       # Backend en Laravel
+├── frontend/       # Frontend en Remix
+└── README.md       # Documentation du projet
 
 ## Setup Backend
 
@@ -23,21 +23,23 @@
 ## Features
 
 - Upload file
-- List grouped files
+- List grouped files by categories (Passport or photo or financial or Other)
 - Delete file
 
-> > > > Test File Upload
+ 1) Test File Upload
 > > > > Open the frontend in your browser
 > > > > Select a file (PDF, PNG, or JPG, max 4MB)
 > > > > Choose a category (e.g., passport, photo, other)
 > > > > Click Upload
 > > > > You should see a success message and the file appear in the list
-> > > >
-> > > > > Test File Listing
+
+2) Test File Listing
 > > > > > Uploaded files are displayed on the page
 > > > > > Files are grouped by category
-> > > > > Test File Deletion
+ 
+3)Test File Deletion
 > > > > > Click the Delete button next to a file
+> > > > > A pop-up page will appear when I click ‘Delete'
 > > > > > The file should be removed from:
 > > > > > the UI
 > > > > > the database
@@ -51,11 +53,9 @@ File larger than 4MB
 
 > > > You should see an error message
 
-## 🚀 Backend Setup (Laravel)
 
-This project uses **SQLite** for data persistence to simplify installation and configuration.
 
-### 🔧 Environment Configuration
+###  Environment Configuration
 
 Make sure your `.env` file contains the following lines:
 
@@ -65,27 +65,10 @@ DB_DATABASE=database/database.sqlite
 FILESYSTEM_DISK=public
 ```
 
----
-
-### 🗄️ Database Setup
-
-Create an empty SQLite database file inside the backend project:
-
-- **Windows:**
-
-```bash
-New-Item database/database.sqlite
-```
-
-- **Mac/Linux:**
-
-```bash
-touch database/database.sqlite
-```
 
 ---
 
-### 📦 Run Migrations
+###  Run Migrations
 
 Execute the following command to create the necessary database tables:
 
@@ -95,7 +78,7 @@ php artisan migrate
 
 ---
 
-### 🔗 Storage Link
+###  Storage Link
 
 This step is required to make uploaded files accessible from the frontend:
 
@@ -112,7 +95,7 @@ Run the Laravel development server: php artisan serve
 
 
 
-
+pictures from the project
 
 
 <img width="809" height="695" alt="visa" src="https://github.com/user-attachments/assets/03d8db62-43e0-4371-892b-e7e39efa7cd3" />
