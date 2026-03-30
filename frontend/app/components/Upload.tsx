@@ -57,7 +57,7 @@ export default function Upload({
             style={dropzoneStyle}
           >
             <span style={{ fontWeight: "600" }}>
-              {file ? `📄 ${file.name}` : "Click to upload"}
+              {file ? ` ${file.name}` : "Click to upload"}
             </span>
             <small>PDF, PNG, JPG (Max 4MB)</small>
             <small style={{ color: "#999" }}>* Drag & drop disabled</small>

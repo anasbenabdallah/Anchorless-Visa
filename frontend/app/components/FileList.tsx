@@ -38,10 +38,10 @@ export default function FileList() {
     if (!fileToDelete) return;
     try {
       await axios.delete(`http://127.0.0.1:8000/api/files/${fileToDelete}`);
-      setStatus({ type: "success", msg: "✓ Removed" });
+      setStatus({ type: "success", msg: "Deleted" });
       fetchFiles();
     } catch (error) {
-      setStatus({ type: "error", msg: "✕ Failed" });
+      setStatus({ type: "error", msg: "Failed" });
     } finally {
       setIsModalOpen(false);
       setFileToDelete(null);
@@ -97,12 +97,12 @@ export default function FileList() {
           <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
             {files[category].map((file) => (
               <div key={file.id} style={fileRowStyle}>
-                <div>📄 {file.name}</div>
+                <div> {file.name}</div>
                 <button
                   onClick={() => openDeleteModal(file.id)}
                   style={btnRemoveStyle}
                 >
-                  Remove
+                  Delete
                 </button>
               </div>
             ))}
@@ -175,5 +175,5 @@ const btnRemoveStyle = {
   border: "none",
   background: "none",
   cursor: "pointer",
-  fontWeight: "600",
+  fontWeight: "500",
 };
