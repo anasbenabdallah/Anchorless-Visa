@@ -111,4 +111,11 @@ Run the Laravel development server:
 
 ```bash
 php artisan serve
-```
+```<img width="809" height="695" alt="visa" src="https://github.com/user-attachments/assets/03d8db62-43e0-4371-892b-e7e39efa7cd3" />
+<img width="814" height="737" alt="visa2" src="https://github.com/user-attachments/assets/f7af4954-ee0b-4e4f-b7c6-8fcd963589bb" />
+<img width="831" height="839" alt="visa3" src="https://github.com/user-attachments/assets/482c91ba-098c-4516-bdd7-45d91c10bd27" />
+<img width="802" height="747" alt="visa4" src="https://github.com/user-attachments/assets/be044133-d3ff-44c8-a7ee-7202a251c65e" />
+<img width="377" height="123" alt="visa5" src="https://github.com/user-attachments/assets/c490acfe-795f-4f08-b8ec-1a79495d6c7a" />
+
+
+
